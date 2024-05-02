@@ -1,0 +1,35 @@
+nav {
+  background-color: rgb(138, 138, 255);
+  height: 60px;
+  width: 100vw;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul a {
+  color: beige;
+  transition: 300ms;
+  font-size: 20px;
+}
+
+.selected {
+  color: yellow;
+  animation: spin 3s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
